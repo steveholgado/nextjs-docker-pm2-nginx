@@ -3,6 +3,7 @@ FROM nginx:alpine
 # Remove any existing config files
 RUN rm /etc/nginx/conf.d/*
 
-# Copy custom config file
-# All files in "/etc/nginx/conf.d/" dir get merged into main config
+# Copy config files
+# *.conf files in "conf.d/" dir get included in main config
 COPY ./default.conf /etc/nginx/conf.d/
+COPY ./proxy_nextjs /etc/nginx/conf.d/
