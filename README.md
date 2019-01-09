@@ -12,6 +12,8 @@ A second container with the [NGINX](https://www.nginx.com/) web server is used a
 docker-compose up
 ```
 
+NGINX listens on port 80, which is the default HTTP port, so you can just visit **http://localhost/**
+
 ## PM2 commands
 
 PM2 commands can still be used inside a container with the `docker exec` command:
