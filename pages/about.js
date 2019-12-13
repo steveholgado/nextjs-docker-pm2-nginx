@@ -7,6 +7,10 @@ function About() {
       <Link href="/">
         <a>Home</a>
       </Link>
+      <br />
+      <Link href="/server-rendered">
+        <a>Server Rendered</a>
+      </Link>
       <h1>About</h1>
     </>
   )
